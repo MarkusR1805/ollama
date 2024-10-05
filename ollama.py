@@ -4,7 +4,7 @@ import json
 import webbrowser
 from threading import Timer
 
-# Ollama API endpoint (adjust if necessary)
+# Ollama API Endpunkt (ggf. anpassen)
 OLAMA_API_URL = "http://localhost:11434/api/generate"
 
 # Verfügbare Ollama-Modelle, kann man ändern/erweitern
