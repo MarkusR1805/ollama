@@ -13,7 +13,7 @@ pip install --upgrade gradio
 ```
 <br>
 
-![Picture3](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/39f5fc9b-9999-469f-b6ca-01d2771f6ff1/original=true,quality=90/04102024-macbook-m2_00015_.jpeg)
+![Picture3](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8d78a056-7971-422f-87a1-31cca56f3bcb/original=true,quality=90/30911869.jpeg)
 
 ### Select your models, the following models are listed in the code:
 <h3>MODELS = [“llama3.2:3b-instruct-q8_0”, “llama3.1:latest”, “llama3.2:3b”, “deepseek-coder-v2:16b”]</h3>
