@@ -7,7 +7,7 @@
 
 ### Select your models, the following models are listed in the code:
 <h3>MODELS = [“llama3.2:3b-instruct-q8_0”, “llama3.1:latest”, “llama3.2:3b”, “deepseek-coder-v2:16b”]</h3>
-You must edit this line if you use other models!
+You must edit this  11 if you use other models!
 To install these models you have to execute the following command in the terminal:
 
 ```
