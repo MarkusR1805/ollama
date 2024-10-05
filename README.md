@@ -1,7 +1,7 @@
 <div align="center">
     <h1>LLM with Ollama</h1>
 </div>
-<div align="center">Download and start Ollama https://ollama.com</div><br>
+<div align="center">Download and start Ollama https://ollama.com</div>
 <div align="center"><h3>You need the Python library “Gradio”</h3></div>
 
 ```
