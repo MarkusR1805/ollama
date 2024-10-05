@@ -1,7 +1,17 @@
 <div align="center">
     <h1>LLM with Ollama</h1>
 </div>
-<div align="center">Download and start Ollama https://ollama.com</div>
+<div align="center">Download and start Ollama https://ollama.com</div><br>
+<div align="center">You need the Python library “Gradio”</div>
+
+```
+pip install gradio
+```
+or
+```
+pip install --upgrade gradio
+```
+<br>
 
 ![Picture3](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/814daa7f-5c9c-4266-9b74-822e061be226/original=true,quality=90/32942737.jpeg)
 
