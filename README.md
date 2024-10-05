@@ -22,7 +22,7 @@ ollama pull llama3.2:3b
 ```
 ollama pull deepseek-coder-v2:16b
 ```
-Use the terminal to go to the directory where you installed the repository. cd directory
+Use the terminal to go to the directory where you installed the repository.<br>
 Start the program in the terminal with:
 ```
 python ollama.py
