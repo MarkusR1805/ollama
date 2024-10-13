@@ -21,12 +21,6 @@ You must edit this line 11 if you use other models!
 To install these models you have to execute the following command in the terminal:
 
 ```
-ollama pull llama3.2:3b-instruct-q8_0
-```
-```
-ollama pull llama3.1:latest
-```
-```
 ollama pull llama3.2:3b
 ```
 ```
@@ -35,5 +29,5 @@ ollama pull deepseek-coder-v2:16b
 Use the terminal to go to the directory where you installed the repository.<br>
 Start the program in the terminal with:
 ```
-python ollama.py
+python main.py
 ```
