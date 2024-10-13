@@ -16,7 +16,7 @@ pip install --upgrade gradio
 ![Picture3](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/8d78a056-7971-422f-87a1-31cca56f3bcb/original=true,quality=90/30911869.jpeg)
 
 ### Select your models, the following models are listed in the code:
-<h3>MODELS = [“llama3.2:3b-instruct-q8_0”, “llama3.1:latest”, “llama3.2:3b”, “deepseek-coder-v2:16b”]</h3>
+## MODELS = [“llama3.2:3b”, “deepseek-coder-v2:16b”]
 You must edit this line 11 if you use other models!
 To install these models you have to execute the following command in the terminal:
 
