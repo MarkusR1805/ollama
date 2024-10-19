@@ -1,6 +1,7 @@
 import gradio as gr
 import requests
 import json
+import subprocess
 import torch
 
 # Überprüfen, ob MPS verfügbar ist
@@ -13,6 +14,21 @@ elif torch.cuda.is_available():
 else:
     device = torch.device('cpu')
     print("CPU wird verwendet\n")
+
+def get_ollama_models():
+    try:
+        result = subprocess.run(['ollama', 'list'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        if result.returncode == 0:
+            # Verarbeiten der Ausgabe
+            lines = result.stdout.strip().split('\n')
+            model_list = [line.split()[0] for line in lines if line]
+            return model_list
+        else:
+            print(f"Error: {result.stderr}")
+            return []
+    except Exception as e:
+        print(f"Ein Fehler ist aufgetreten: {str(e)}")
+        return []
 
 def generate_code(prompt, model):
     url = "http://localhost:11434/api/generate"
@@ -39,14 +55,14 @@ def generate_code(prompt, model):
     except Exception as e:
         return f"Ein Fehler ist aufgetreten: {str(e)}"
 
-# Liste der verfügbaren Modelle
-model_list = ["llama3.2:3b", "deepseek-coder-v2:16b"]
+# Liste der verfügbaren Modelle dynamisch laden
+model_list = get_ollama_models()
 
 iface = gr.Interface(
     fn=generate_code,
     inputs=[
         gr.Textbox(lines=2, placeholder="Deine Frage/Anforderung hier...", label="Prompt"),
-        gr.Dropdown(choices=model_list, value="llama3.2:3b", label="Modell auswählen")
+        gr.Dropdown(choices=model_list, value=model_list[0] if model_list else "", label="Modell auswählen")
     ],
     outputs="text",
     title="Arbeiten mit LLM-Modellen",
