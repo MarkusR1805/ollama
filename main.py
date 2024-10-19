@@ -65,7 +65,7 @@ iface = gr.Interface(
         gr.Dropdown(choices=model_list, value=model_list[0] if model_list else "", label="Modell auswählen")
     ],
     outputs="text",
-    title="Arbeiten mit LLM-Modellen",
+    title="Wähle Dein LLM-Modell und nutze sie offline!",
     description="Gib einen Prompt ein und wähle ein Modell:"
 )
 
